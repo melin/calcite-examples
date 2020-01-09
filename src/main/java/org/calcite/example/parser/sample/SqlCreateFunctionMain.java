@@ -1,10 +1,11 @@
-package org.calcite.example.parser;
+package org.calcite.example.parser.sample;
 
 import org.apache.calcite.config.Lex;
 import org.apache.calcite.sql.SqlNode;
 import org.apache.calcite.sql.dialect.OracleSqlDialect;
 import org.apache.calcite.sql.parser.SqlParseException;
 import org.apache.calcite.sql.parser.SqlParser;
+import org.calcite.example.parser.CustomSqlParserImpl;
 
 /**
  * Created by libinsong on 2020/1/7 9:46 下午

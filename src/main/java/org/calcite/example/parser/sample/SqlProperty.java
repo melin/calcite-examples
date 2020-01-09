@@ -1,4 +1,4 @@
-package org.calcite.example.parser;
+package org.calcite.example.parser.sample;
 
 import com.google.common.collect.ImmutableList;
 import org.apache.calcite.sql.SqlCall;

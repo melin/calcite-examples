@@ -1,4 +1,4 @@
-package org.calcite.example.parser;
+package org.calcite.example.parser.sample;
 
 import org.apache.calcite.sql.SqlCall;
 import org.apache.calcite.sql.SqlKind;
@@ -33,6 +33,7 @@ public class SqlCreateFunction extends SqlCall {
         super(pos);
         this.functionName = functionName;
         this.className = className;
+        this.comment = comment;
         this.properties = properties;
         this.methodName = methodName;
     }

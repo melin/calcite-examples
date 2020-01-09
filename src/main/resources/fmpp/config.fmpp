@@ -48,7 +48,9 @@ data: {
     # Example. "org.apache.calcite.sql.*", "java.util.List".
     # 导入处理的语句
     imports: [
-        "org.calcite.example.parser.SqlCreateFunction"
+        "org.calcite.example.parser.sample.SqlCreateFunction"
+        "org.calcite.example.parser.sample.SqlProperty"
+        "org.calcite.example.parser.sample1.SqlSubmit"
         "org.calcite.example.parser.sample.statement.model.*"
         "org.apache.calcite.sql.*"
     ]
@@ -60,19 +62,8 @@ data: {
         "COMMENT"
         "PROPERTY"
         # 关键字例子
-        "LITERAL_SAMPLE"
-        "UNSIGNED_NUMERIC_LITERAL_SAMPLE"
-        "NUMERIC_LITERAL_SAMPLE"
-        "STRING_LITERAL_SAMPLE"
-        "DATE_TIME_LITERAL_SAMPLE"
-        "INTERVAL_LITERAL_SAMPLE"
-        "INTERVAL_QUALIFIER_SAMPLE"
-        "IDENTIFIER_SAMPLE"
-        "SIMPLE_IDENTIFIER_SAMPLE"
-        "SIMPLE_IDENTIFIER_COMMA_LIST_SAMPLE"
-        "COMPOUND_IDENTIFIER_SAMPLE"
-        "COMPOUND_IDENTIFIER_TYPE_COMMA_LIST_SAMPLE"
-
+        "SUBMIT"
+        "JOB"
     ]
 
     # List of keywords from "keywords" section that are not reserved.
@@ -394,20 +385,7 @@ data: {
     statementParserMethods: [
         "SqlCreateFunction()"
         # 测试信息
-        "LiteralSample()"
-        "UnsignedNumericLiteralSample()"
-        "NumericLiteralSample()"
-        "StringLiteralSample()"
-        "DateTimeLiteralSample()"
-        "IntervalLiteralSample()"
-        "IntervalQualifierSample()"
-        "IdentifierSample()"
-        "SimpleIdentifierSample()"
-        "SimpleIdentifierCommaListSample()"
-        "ParenthesizedSimpleIdentifierListSample()"
-        "CompoundIdentifierSample()"
-        "CompoundIdentifierTypeSample()"
-        "CompoundIdentifierTypeCommaListSample()"
+        "SqlSubmit()"
     ]
 
     # List of methods for parsing custom literals.
@@ -459,7 +437,6 @@ data: {
         "parserImpls.ftl",
         "parserImplsStatementSample.ftl",
         "parserImplsTypeSample.ftl",
-
     ]
 
     includeCompoundIdentifier: true
